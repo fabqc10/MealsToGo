@@ -29,11 +29,8 @@ export const SettingsScreen = ({ navigation}) => {
         setPhoto(photoUri);
     }
     useFocusEffect(() => {
-        useCallback(() => {
-            getProfilePicture(user)
-        },[user])
-        
-    });
+        getProfilePicture(user)   
+    },[user]);
     return(
       <SafeArea>
           <AvatarContainer>
